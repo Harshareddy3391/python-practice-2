@@ -5,7 +5,7 @@ max_val=arry[0]
 
 
 
-for index,i in enumerate(arry):
+for ind,i in enumerate(arry):
     if ( i > max_val):
         max_val=i
     elif(i<min_val):
