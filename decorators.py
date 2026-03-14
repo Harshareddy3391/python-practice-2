@@ -33,7 +33,7 @@ def div(a,b):
 div(4,2)"""
 
 
-
+"""
 
 def second(fun):
 
@@ -54,5 +54,33 @@ def first():
 
 
 first()     
+
+ """
+
+
+def sec(fun):
+    def inner():
+
+        fun()
+        print("good morning")
+        
+    return inner
+
+
+
+
+@sec
+def first():
+
+
+    print("hi mama")
+
+
+
+#first()    
+
+sec(first)
+
+
 
  
