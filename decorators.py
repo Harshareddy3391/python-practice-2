@@ -19,7 +19,7 @@ division(5,2)
 division(5,0)"""
 
 
-
+"""
 
 def div(a,b):
    print( a/b )
@@ -30,4 +30,29 @@ def div(a,b):
 
 
 
-div(4,2)
+div(4,2)"""
+
+
+
+
+def second(fun):
+
+
+    def inner():
+        print("good mornig")
+        fun()
+        print("byee!!")
+        
+    return inner    
+
+
+@second
+def first():
+    
+    print("hii harsha")
+
+
+
+first()     
+
+ 
