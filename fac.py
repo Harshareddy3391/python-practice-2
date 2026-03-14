@@ -17,7 +17,7 @@ for i in range(n):
     print(i*n-1)"""
 
 
-
+"""
 
 n=5
 
@@ -27,4 +27,16 @@ for i in range(n+1,0,-1):
         print("*",end="")
 
 
-    print()    
+    print()    """
+
+
+def   val(n):
+    if n == 1 or n == 0:
+        result=1
+    else:
+        result=n*val(n-1)
+
+    return result    
+
+
+print(val(6))
