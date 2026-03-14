@@ -26,9 +26,10 @@ def ovel_count(a):
    
    count=0
 
-   st=str(a)
+   st=a
    for i in st:
-     if i.lower() in "aioue":
+     d=i.lower() 
+     if d not in "aioue":
             count+=1
    return print(count)
    
