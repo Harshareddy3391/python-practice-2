@@ -1,6 +1,10 @@
 import csv
 
-d=open("MOCK_DATA.csv",'r')
+d = open("MOCK_DATA.csv", 'r')
+a = csv.reader(d)
+print(type(a))
 
-a=read(d)
-print(a)
+for i in a:
+    print(i)
+
+d.close()
