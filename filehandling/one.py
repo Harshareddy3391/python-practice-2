@@ -1,6 +1,6 @@
-f=open("one.text",'w')
+f=open("one1.text",'x')
 
-s=f.write()
+s=f.write("hello world")
 
 print(s)
 
